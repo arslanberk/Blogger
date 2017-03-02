@@ -54,10 +54,15 @@ spring:
                   logs: target/elasticsearch/log
                   data: target/elasticsearch/data
     mail:
-        host: localhost
-        port: 25
-        username:
-        password:
+        host: mail.arslansoftware.com
+        port: 587
+        username: jhipster-blogger@arslansoftware.com
+        password: +Blogger+
+        protocol: smtp
+        tls: false
+        properties.mail.smtp:
+            auth: true
+            starttls.enable: false
     messages:
         cache-seconds: 1
     thymeleaf:
@@ -107,7 +112,7 @@ jhipster:
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000
     mail: # specific JHipster mail property, for standard properties see MailProperties
-        from: Blogger@localhost
+        from: jhipster-blogger@arslansoftware.com
         base-url: http://127.0.0.1:8080
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
