@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "4.0.7",
+    "baseName": "Blogger",
+    "packageName": "com.blogger",
+    "packageFolder": "com/blogger",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "jwtSecretKey": "2ec1254b6567915e610cf66a0de082134cab71d7",
+    "clientFramework": "angular1",
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "applicationType": "monolith",
+    "testFrameworks": [
+      "gatling",
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "de",
+      "ru",
+      "tr"
+    ]
+  }
+}
